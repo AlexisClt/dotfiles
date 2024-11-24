@@ -1,6 +1,8 @@
 tap "homebrew/bundle"
 # Distributed revision control system
 brew "git"
+# Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
 # Web browser
 cask "firefox"
 # Terminal emulator as alternative to Apple's Terminal app
