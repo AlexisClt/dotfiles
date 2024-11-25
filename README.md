@@ -1,5 +1,6 @@
 # Dotfiles
 
+Inspired by the work of SeniorMars.
 In progress.
 ___
 ### Simlinks
