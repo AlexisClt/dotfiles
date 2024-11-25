@@ -1,3 +1,6 @@
 [user]
 	name = AlexisClt
 	email = 61407749+AlexisClt@users.noreply.github.com
+
+[core]
+	excludesfile = /Users/aki/.dotfiles/.config/git/.gitignore
