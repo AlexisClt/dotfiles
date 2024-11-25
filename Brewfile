@@ -1,10 +1,22 @@
 tap "homebrew/bundle"
+# GNU compiler collection
+brew "gcc"
 # Distributed revision control system
 brew "git"
+# Utility for directing compilation
+brew "make"
+# Fast, highly customisable system info script
+brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Extraction utility for .zip compressed archives
+brew "unzip"
+# Command-line program for getting and setting the contents of the X selection
+brew "xsel"
 # Web browser
 cask "firefox"
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Open-source code editor
