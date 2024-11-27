@@ -1,6 +1,11 @@
 [user]
-	name = AlexisClt
+	name = Alexis Cullet
 	email = 61407749+AlexisClt@users.noreply.github.com
 
 [core]
 	excludesfile = /Users/aki/.dotfiles/.config/git/.gitignore
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
