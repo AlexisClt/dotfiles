@@ -1,4 +1,7 @@
 tags
+
+test.sh
+.luarc.json
 *.class
 
 # ignore IDE specific files
@@ -7,3 +10,5 @@ tags
 *.sw*
 
 .DS_Store
+
+lazy-lock.json

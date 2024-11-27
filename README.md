@@ -1,7 +1,7 @@
 # Dotfiles
 
 Inspired by the work of SeniorMars.
-In progress.
+In progress. Most of the code so far is from [this repo](https://github.com/nvim-lua/kickstart.nvim/tree/master).
 ___
 ### Simlinks
 ```
