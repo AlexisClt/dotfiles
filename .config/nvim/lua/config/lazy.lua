@@ -20,6 +20,8 @@ require("lazy").setup({
 	spec = {
 		-- import your plugins
 		{ import = "plugins.colorschemes.tokyonight" },
+		-- { import = "plugins.colorschemes.solarized-osaka" },
+		-- { import = "plugins.colorschemes.material" },
 		{ import = "plugins" },
 	},
 	-- Configure any other settings here. See the documentation for more details.
