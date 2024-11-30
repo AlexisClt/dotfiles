@@ -1,3 +1,3 @@
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    set -Ux DBUS_SESSION_BUS_ADDRESS '$DBUS_LAUNCHD_SESSION_BUS_SOCKET'
 end
