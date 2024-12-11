@@ -14,4 +14,23 @@ function fish_greeting
                       '(set_color F00)'/'(set_color FF7F00)'J'(set_color FF0)'\\'(set_color FF7F00)'J'(set_color F00)'T\\'(set_color FF7F00)'JJJ'(set_color F00)'J)
                       (J'(set_color FF7F00)'JJ'(set_color F00)'| \UUU)
                        (UU)'(set_color normal)
+    
+    set csv_file ~/Documents/data/quotes/english.csv
+    set txt_file ~/Documents/data/quotes/french.txt
+
+    set rand (random 1 31102)
+
+    set line_csv (sed "$rand q;d" $csv_file)
+    set line_txt (sed "$rand q;d" $txt_file)
+
+    set what (echo $line_csv | awk -F '|' '{print $1}')
+    set where (echo $line_csv | awk -F '|' '{print $2}')
+    set translation (echo $line_txt)
+    
+    echo " "
+    echo "  $what"
+    echo "                      $where"
+    echo " "
+    echo "  $translation"
+    echo " "
 end
