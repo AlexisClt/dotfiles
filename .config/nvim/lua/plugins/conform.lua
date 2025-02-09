@@ -30,12 +30,28 @@ return { -- Autoformat
         lsp_format = lsp_format_opt,
       }
     end,
+    formatters = {
+      -- Override formatters to use 2 spaces instead of tabs
+      lua_format = {
+        prepend_args = { "--indent-width", "2", "--tab-width", "2" },
+      },
+      stylua = {
+        prepend_args = { "--indent-type", "Spaces", "--indent-width", "2" },
+      },
+      clang_format = {
+        prepend_args = { "--style={IndentWidth: 2}" },
+      },
+      black = {
+        prepend_args = { "--line-length", "88" }, -- Optional for Python (default 88)
+      },
+    },
     formatters_by_ft = {
-      lua = { 'stylua' },
+      lua = { "stylua" },
       -- Conform can also run multiple formatters sequentially
-      python = { "black" },
+      python = { "isort", "black" },
       cpp = { "clang-format" },
-      --
+      rust = { "rustfmt", lsp_format = "fallback" },
+
       -- You can use 'stop_after_first' to run the first available formatter from the list
       -- javascript = { "prettierd", "prettier", stop_after_first = true },
     },
