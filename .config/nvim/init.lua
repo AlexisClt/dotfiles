@@ -48,6 +48,10 @@ vim.opt.cursorline = true
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 5
 
+vim.o.tabstop = 2
+vim.o.softtabstop = 2
+vim.o.shiftwidth = 2
+
 -- [[ Basic Keymaps ]]
 local keyset = vim.keymap.set
 keyset("n", "<Esc>", "<cmd>nohlsearch<CR>")
