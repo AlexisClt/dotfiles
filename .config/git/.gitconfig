@@ -1,6 +1,7 @@
 [user]
 	name = Alexis Cullet
 	email = 61407749+AlexisClt@users.noreply.github.com
+	signingkey = 6E071877F157AB24
 
 [core]
 	excludesfile = /Users/aki/.dotfiles/.config/git/.gitignore
@@ -9,3 +10,7 @@
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
+[commit]
+	gpgsign = true
+[tag]
+	gpgSign = true
