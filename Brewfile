@@ -9,12 +9,22 @@ brew "python@3.13"
 brew "black"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
+# Console Matrix
+brew "cmatrix"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
+# Apjanke's fork of the classic cowsay project
+brew "cowsay"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
+# Pack, ship and run any application as a lightweight container
+brew "docker"
+# Banner-like program prints strings as ASCII art
+brew "figlet"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
 # GNU compiler collection
 brew "gcc"
 # GitHub command-line tool
@@ -41,6 +51,8 @@ brew "neovim"
 brew "pyright"
 # Safe, concurrent, practical language
 brew "rust"
+# Tool to send files and directories, based on iroh
+brew "sendme"
 # Extraction utility for .zip compressed archives
 brew "unzip"
 # Internet file retriever
@@ -53,6 +65,8 @@ brew "zegervdv/zathura/girara"
 cask "firefox"
 cask "font-jetbrains-mono"
 cask "font-jetbrains-mono-nerd-font"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
 # Full TeX Live distribution without GUI applications
@@ -67,15 +81,11 @@ cask "skim"
 cask "stats"
 # Open-source code editor
 cask "visual-studio-code"
-vscode "equinusocio.vsc-material-theme"
-vscode "equinusocio.vsc-material-theme-icons"
+vscode "dan-c-underwood.arm"
+vscode "enkia.tokyo-night"
 vscode "formulahendry.code-runner"
 vscode "github.copilot"
 vscode "github.copilot-chat"
-vscode "james-yu.latex-workshop"
-vscode "magdalenalipka.tokyo-night-frameless"
-vscode "mechatroner.rainbow-csv"
-vscode "ms-python.black-formatter"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
@@ -86,5 +96,5 @@ vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode.cpptools"
 vscode "pkief.material-icon-theme"
-vscode "rust-lang.rust-analyzer"
-vscode "tamasfe.even-better-toml"
+vscode "visualstudioexptteam.intellicode-api-usage-examples"
+vscode "visualstudioexptteam.vscodeintellicode"
