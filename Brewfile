@@ -23,6 +23,8 @@ brew "docker"
 brew "figlet"
 # User-friendly command-line shell for UNIX-like operating systems
 brew "fish"
+# Plugin manager for the Fish shell
+brew "fisher"
 # Infamous electronic fortune-cookie generator
 brew "fortune"
 # GNU compiler collection
@@ -53,6 +55,8 @@ brew "pyright"
 brew "rust"
 # Tool to send files and directories, based on iroh
 brew "sendme"
+# Display directories as trees (with optional color/HTML output)
+brew "tree"
 # Extraction utility for .zip compressed archives
 brew "unzip"
 # Internet file retriever
@@ -96,5 +100,6 @@ vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "ms-vscode.cpptools"
 vscode "pkief.material-icon-theme"
+vscode "rust-lang.rust-analyzer"
 vscode "visualstudioexptteam.intellicode-api-usage-examples"
 vscode "visualstudioexptteam.vscodeintellicode"
