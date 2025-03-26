@@ -4,7 +4,7 @@
 	signingkey = 6E071877F157AB24
 
 [core]
-	excludesfile = /Users/aki/.dotfiles/.config/git/.gitignore
+	excludesfile = $HOME/.dotfiles/.config/git/.gitignore
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
