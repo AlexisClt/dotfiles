@@ -4,7 +4,7 @@
 	signingkey = 6E071877F157AB24
 
 [core]
-	excludesfile = $HOME/.dotfiles/.config/git/.gitignore
+	excludesfile = ~/.dotfiles/.config/git/.gitignore
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
@@ -14,3 +14,8 @@
 	gpgsign = true
 [tag]
 	gpgSign = true
+
+[filter "cleanFishVars"]
+	clean = awk '!/SETUVAR _.*/{print}'
+[diff "fish_variables"]
+	textconv = awk '!/SETUVAR _.*/{print}'
