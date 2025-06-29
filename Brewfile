@@ -1,12 +1,16 @@
 tap "homebrew/bundle"
 tap "homebrew/services"
+tap "persiliao/tap"
+tap "tarkah/tickrs"
 tap "zegervdv/zathura"
 # Message bus system, providing inter-application communication
-brew "dbus"
+brew "dbus", restart_service: :changed
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.13"
 # Python code formatter
 brew "black"
+# Resource monitor. C++ version and continuation of bashtop and bpytop
+brew "btop"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
 # Console Matrix
@@ -19,6 +23,8 @@ brew "cowsay"
 brew "curl"
 # Pack, ship and run any application as a lightweight container
 brew "docker"
+# Like neofetch, but much faster because written mostly in C
+brew "fastfetch"
 # Banner-like program prints strings as ASCII art
 brew "figlet"
 # User-friendly command-line shell for UNIX-like operating systems
@@ -37,18 +43,24 @@ brew "git"
 brew "gnu-tar"
 # GNU Pretty Good Privacy (PGP) package
 brew "gnupg"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Popular GNU data compression program
 brew "gzip"
+# Improved top (interactive process viewer)
+brew "htop"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Utility for directing compilation
 brew "make"
 # FTP client with an advanced user interface
 brew "ncftp"
-# Fast, highly customisable system info script
-brew "neofetch"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Pinentry for GPG on Mac
+brew "pinentry-mac"
+# Object-relational database system
+brew "postgresql@14"
 # Static type checker for Python
 brew "pyright"
 # Safe, concurrent, practical language
@@ -59,12 +71,18 @@ brew "sendme"
 brew "tree"
 # Extraction utility for .zip compressed archives
 brew "unzip"
+# Sends magic packets to wake up network-devices
+brew "wakeonlan"
 # Internet file retriever
 brew "wget"
 # Command-line program for getting and setting the contents of the X selection
 brew "xsel"
+# Realtime ticker data in your terminal 📈
+brew "tarkah/tickrs/tickrs"
 # Interface library
 brew "zegervdv/zathura/girara"
+# macOS Menu Bar application for managing Homebrew services.
+cask "brew-services-manage"
 # Web browser
 cask "firefox"
 cask "font-jetbrains-mono"
@@ -85,11 +103,14 @@ cask "skim"
 cask "stats"
 # Open-source code editor
 cask "visual-studio-code"
+# Multimedia player
+cask "vlc"
 vscode "dan-c-underwood.arm"
+vscode "ecmel.vscode-html-css"
 vscode "enkia.tokyo-night"
 vscode "formulahendry.code-runner"
-vscode "github.copilot"
-vscode "github.copilot-chat"
+vscode "golang.go"
+vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
 vscode "ms-python.vscode-pylance"
@@ -98,8 +119,14 @@ vscode "ms-toolsai.jupyter-keymap"
 vscode "ms-toolsai.jupyter-renderers"
 vscode "ms-toolsai.vscode-jupyter-cell-tags"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
+vscode "ms-vscode-remote.remote-ssh"
+vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode.cpptools"
+vscode "ms-vscode.remote-explorer"
 vscode "pkief.material-icon-theme"
+vscode "redhat.vscode-yaml"
+vscode "ritwickdey.liveserver"
 vscode "rust-lang.rust-analyzer"
+vscode "tomoki1207.pdf"
 vscode "visualstudioexptteam.intellicode-api-usage-examples"
 vscode "visualstudioexptteam.vscodeintellicode"
