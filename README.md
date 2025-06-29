@@ -2,7 +2,7 @@
 
 Inspired by the work of SeniorMars.
 
-In progress. Most of the code so far is from [this repo](https://github.com/nvim-lua/kickstart.nvim/tree/master).
+Most of the code so far is from [this repo](https://github.com/nvim-lua/kickstart.nvim/tree/master).
 ___
 ### Simlinks
 ```
