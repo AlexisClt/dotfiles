@@ -5,6 +5,9 @@
 
 [core]
 	excludesfile = ~/.dotfiles/.config/git/.gitignore
+	compression=9
+	whitespace=error
+	preloadindex=true
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
@@ -19,3 +22,71 @@
 	clean = awk '!/SETUVAR _.*/{print}'
 [diff "fish_variables"]
 	textconv = awk '!/SETUVAR _.*/{print}'
+
+[url "git@github.com:AlexisClt/"]
+	insteadOf = "ac:"
+
+[url "git@github.com:"]
+	insteadOf = "gh:"
+
+[init]
+	defaultBranch = main
+
+[status]
+	branch = true
+	showStash = true
+	showUntrackedFiles = all
+
+[diff]
+	context = 3
+	renames = copies
+	interHunkContext = 10
+
+[pager]
+	branch = false
+	tag = false
+	diff = diff-so-fancy | 'less'
+
+[color "diff"]
+  meta       = black bold
+  frag       = magenta
+  context    = white
+  whitespace = yellow reverse
+  old        = red
+
+[interactive]
+  diffFilter = diff-so-fancy --patch
+  singlekey = true
+
+[diff-so-fancy]
+  markEmptyLines = false
+
+[push]
+  autoSetupRemote = true
+  default = current
+  followTags = true
+
+[pull]
+	rebase = true
+	default = current
+
+[rebase]
+	autoStash = true
+	missingCommitsCheck = warn
+
+[log]
+	abbrevCommit = true
+	graphColors = blue, yellow, cyan, magenta, red, green
+
+[color.decorate]
+  HEAD = red
+  branch = blue
+  tag = yellow
+  remoteBranch = magenta
+
+[color "branch"]
+  current  = magenta
+  local    = default
+  remote   = yellow
+  upstream = green
+  plain    = blue

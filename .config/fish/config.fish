@@ -5,3 +5,4 @@ set -x GPG_TTY (tty)
 
 ssh-add -q --apple-use-keychain ~/.ssh/id_ed25519 > /dev/null 2>&1
 
+source ~/.config/fish/functions/git_aliases.fish
