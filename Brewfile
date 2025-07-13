@@ -1,3 +1,4 @@
+tap "felixkratz/formulae"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "persiliao/tap"
@@ -11,6 +12,8 @@ brew "python@3.13"
 brew "black"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Turn English phrases to C or C++ declarations
+brew "cdecl"
 # Versatile and fast Unicode/ASCII/ANSI graphics renderer
 brew "chafa"
 # Console Matrix
@@ -47,8 +50,14 @@ brew "gnupg"
 brew "go"
 # Popular GNU data compression program
 brew "gzip"
+# Kubernetes package manager
+brew "helm"
 # Improved top (interactive process viewer)
 brew "htop"
+# Tools and libraries to manipulate images in many formats
+brew "imagemagick"
+# Kubernetes command-line interface
+brew "kubernetes-cli"
 # Next-gen compiler infrastructure
 brew "llvm"
 # Utility for directing compilation
@@ -57,12 +66,16 @@ brew "make"
 brew "ncftp"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
+# Platform built on V8 to build network applications
+brew "node"
 # Pinentry for GPG on Mac
 brew "pinentry-mac"
 # Object-relational database system
 brew "postgresql@14"
 # Static type checker for Python
 brew "pyright"
+# Library for quantitative finance
+brew "quantlib"
 # Safe, concurrent, practical language
 brew "rust"
 # Tool to send files and directories, based on iroh
@@ -77,6 +90,8 @@ brew "wakeonlan"
 brew "wget"
 # Command-line program for getting and setting the contents of the X selection
 brew "xsel"
+# Custom macOS statusbar with shell plugin, interaction and graph support
+brew "felixkratz/formulae/sketchybar"
 # Realtime ticker data in your terminal 📈
 brew "tarkah/tickrs/tickrs"
 # Interface library
@@ -105,11 +120,13 @@ cask "stats"
 cask "visual-studio-code"
 # Multimedia player
 cask "vlc"
+vscode "catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc-icons"
 vscode "dan-c-underwood.arm"
 vscode "ecmel.vscode-html-css"
-vscode "enkia.tokyo-night"
 vscode "formulahendry.code-runner"
 vscode "golang.go"
+vscode "illixion.vscode-vibrancy-continued"
 vscode "ms-kubernetes-tools.vscode-kubernetes-tools"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
@@ -123,7 +140,6 @@ vscode "ms-vscode-remote.remote-ssh"
 vscode "ms-vscode-remote.remote-ssh-edit"
 vscode "ms-vscode.cpptools"
 vscode "ms-vscode.remote-explorer"
-vscode "pkief.material-icon-theme"
 vscode "redhat.vscode-yaml"
 vscode "ritwickdey.liveserver"
 vscode "rust-lang.rust-analyzer"
