@@ -1,0 +1,45 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo" : {
+    "type": "auto",
+    "source" : "~/Pictures/Wallpaper/wallpaper_small.png",
+    "width": 52,           // Width in characters (for image logos)
+    "height": 15,          // Height in characters (for image logos)
+    "padding": {
+        "top": 5,          // Top padding
+        "left": 2,         // Left padding
+        "right": 2         // Right padding
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    "colors"
+  ]
+}
